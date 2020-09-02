@@ -4,8 +4,8 @@ __author__ = "Administrator"
 from airtest.core.api import *
 
 auto_setup(__file__)
-using("Berserker_3_dogfood.air")
-from Berserker_3_dogfood import *
+using("swimmingsuit1.air")
+from swimmingsuit1 import *
 dogFoodMap=Template(r"tpl1595161921148.png", record_pos=(1.146, 0.013), resolution=(899, 593))
 actMap=Template(r"tpl1596260029595.png", record_pos=(1.365, 0.046), resolution=(801, 540))
 #循环肝
