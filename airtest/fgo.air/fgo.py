@@ -158,6 +158,30 @@ def skills(skillNum):
         touch((0.700*w, 0.300*h))
         selectCard()
         sleep(20.0)
+    elif(skillNum==41):
+        #1前：
+        touch((0.100*w, 0.500*h))
+        sleep(1.0)
+    elif(skillNum==42):
+        #2前：
+        touch((0.250*w, 0.500*h))
+        sleep(1.0)
+    elif(skillNum==43):
+        #3前：
+        touch((0.400*w, 0.500*h))
+        sleep(1.0)
+    elif(skillNum==44):
+        #4后：
+        touch((0.550*w, 0.500*h))
+        sleep(1.0)
+    elif(skillNum==45):
+        #5后：
+        touch((0.700*w, 0.500*h))
+        sleep(1.0)
+    elif(skillNum==46):
+        #6后：
+        touch((0.900*w, 0.500*h))
+        sleep(1.0)
 """
     switch(skillNum):
         case 1:

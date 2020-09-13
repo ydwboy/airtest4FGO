@@ -7,7 +7,7 @@ auto_setup(__file__)
 w,h = device().get_current_resolution()
 print(w)
 print(h)
-touch((0.00*w, 0.300*h))
+touch((0.150*w, 0.500*h))
 
 #1 号技能：touch((0.050*w, 0.730*h))
 #2 号技能：touch((0.120*w, 0.730*h))
