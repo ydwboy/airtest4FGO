@@ -19,6 +19,7 @@ kongmingWithMX=Template(r"tpl1595155663680.png", record_pos=(0.54, 0.338), resol
 kongmingWithDFQ=Template(r"tpl1599061140339.png", threshold=0.9, record_pos=(0.683, 0.166), resolution=(852, 568))
 kongmingWithRin=Template(r"tpl1601470489693.png", threshold=0.85, record_pos=(0.709, 0.136), resolution=(905, 598))
 cba=Template(r"tpl1596257560180.png", record_pos=(0.931, 0.222), resolution=(801, 540))
+nero = Template(r"tpl1601739246902.png", record_pos=(0.345, 0.21), resolution=(917, 605))
 jiaGong=Template(r"tpl1595156871397.png", record_pos=(1.32, 0.066), resolution=(899, 593))
 jiaFang=Template(r"tpl1595157663041.png", record_pos=(0.67, 0.273), resolution=(899, 593))
 attack=Template(r"tpl1595157002971.png", record_pos=(1.429, 0.298), resolution=(899, 593))
@@ -49,12 +50,12 @@ def resultCheck():
 #主方法入口
 def actMain():
     #根据礼装找助战
-    findHelperByLiZhuang(cba)
+    findHelperByLiZhuang(nero)
     startCheck()
     #archerJ()
     #
     #riderDFQ()
-    ffGarden()
+    wxcNero()
     #结算
     resultCheck()
 def ffGoldenRush():
@@ -136,8 +137,49 @@ def ffGarden():
     skills(31)
     sleep(5.0)
     
+def wxcNero():
+    wait(head2)
+    wait(attack)
+    #1的回合
+    #豆爸
+    skills1(7)
+    skills1(8)
+    skills2(9,12)
+    #孔明
+    skills1(2)
+    skills1(3)
+    skills2(1,12)
+    #花嫁
+    changingMans(41, 44)
+    skills2(1,12)
+    skills2(2,12)
+    #DFQ
+    skills1(4)
+    skills3(20)
+    skills1(21)
+    touch(attack)
+    sleep(1.5)
+    skills(33)
+    wait(head2)
+    wait(attack)
+    #2
+    touch(attack)
+    sleep(1.5)
+    skills(32)
+    sleep(5.0)
+    wait(head2)
+    wait(attack)
+    #3
+    skills1(6)
+    touch(attack)
+    sleep(1.5)
+    skills(32)
+    sleep(5.0)
+    
+    
 def wxc4CBA():
     wait(head2)
+    wait(attack)
     #1的回合
     skills(4)
     skills(9)
