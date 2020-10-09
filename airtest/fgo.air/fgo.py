@@ -191,12 +191,14 @@ def skills(skillNum):
 def skills1(skillNum1):
     touch((skills_dict[skillNum1].Xloc*w, (skills_dict[skillNum1].Yloc*h)))
     sleep(3.0)
+    wait(attack)
     
 def skills2(skillNum1,skillNum2):
     touch((skills_dict[skillNum1].Xloc*w, (skills_dict[skillNum1].Yloc*h)))
     sleep(0.5)
     touch((skills_dict[skillNum2].Xloc*w, (skills_dict[skillNum2].Yloc*h)))
     sleep(3.0)
+    wait(attack)
     
 def skills3(skillNum1):
     touch((skills_dict[skillNum1].Xloc*w, (skills_dict[skillNum1].Yloc*h)))
