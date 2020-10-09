@@ -19,7 +19,7 @@ while(True):
     if(exists(Template(r"tpl1595162167265.png", record_pos=(0.94, -0.09), resolution=(899, 593)))):
         swipe((0.500*w, 0.600*h),(0.500*w, 0.400*h))
         sleep(1.0)
-        touch(copperApple)
+        touch(silverApple)
         sleep(1.0)
         touch(Template(r"tpl1595162231877.png", record_pos=(1.094, 0.298), resolution=(899, 593)))
         sleep(2.0)
