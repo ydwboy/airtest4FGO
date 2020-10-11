@@ -50,12 +50,13 @@ def resultCheck():
 #主方法入口
 def actMain():
     #根据礼装找助战
-    findHelperByLiZhuang(nero)
+    findHelperByLiZhuang(cba)
     startCheck()
     #archerJ()
     #
     #riderDFQ()
-    GoldenRush()
+    #GoldenRush()
+    Copper()
     #结算
     resultCheck()
 def GoldenRush():
@@ -91,6 +92,38 @@ def GoldenRush():
     touch(attack)
     sleep(1.5)
     skills(31)
+    sleep(5.0)
+    
+def Copper():
+    wait(head2)
+    wait(attack)
+    #1
+    skills1(9)
+    touch(attack)
+    sleep(1.5)
+    skills(33)
+    wait(head2)
+    wait(attack)
+    #2
+    skills1(3)
+    skills2(7,11)
+    skills1(8)
+    skills1(9)
+    touch(attack)
+    sleep(1.5)
+    skills(31)
+    sleep(5.0)
+    wait(head2)
+    wait(attack)
+    #3
+    changingMans(43, 44)
+    skills1(8)
+    skills2(9,12)
+    skills1(4)
+    skills1(5)
+    touch(attack)
+    sleep(1.5)
+    skills(32)
     sleep(5.0)
     
 def ffGarden():
