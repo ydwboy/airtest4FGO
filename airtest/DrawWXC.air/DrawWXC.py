@@ -39,9 +39,8 @@ def draws():
 def drawsOut(typr):
     global drawsDone
     while(drawsDone):
-        sleep(2.0)
+        sleep(3.0)
         if(exists(resetP)):
             drawsDone = False
-
 
 draws()
