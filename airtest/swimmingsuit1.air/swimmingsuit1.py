@@ -50,7 +50,7 @@ def resultCheck():
 #主方法入口
 def actMain():
     #根据礼装找助战
-    findHelperByLiZhuang(cba)
+    findHelperByLiZhuang(nero)
     startCheck()
     #archerJ()
     #
@@ -98,15 +98,20 @@ def Copper():
     wait(head2)
     wait(attack)
     #1
-    skills1(9)
+    skills1(1)
+    skills1(2)
+    skills1(3)
+    skills2(4,11)
+    skills2(5,11)
+    skills2(7,11)
+    skills2(8,11)
+    changingMans(43, 44)
     touch(attack)
     sleep(1.5)
-    skills(33)
+    skills(31)
     wait(head2)
     wait(attack)
     #2
-    skills1(3)
-    skills2(7,11)
     skills1(8)
     skills1(9)
     touch(attack)
@@ -116,14 +121,12 @@ def Copper():
     wait(head2)
     wait(attack)
     #3
-    changingMans(43, 44)
-    skills1(8)
-    skills2(9,12)
-    skills1(4)
-    skills1(5)
+    skills2(7,11)
+    skills3(20)
+    skills1(21)
     touch(attack)
     sleep(1.5)
-    skills(32)
+    skills(31)
     sleep(5.0)
     
 def ffGarden():
