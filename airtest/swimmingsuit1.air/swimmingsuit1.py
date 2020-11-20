@@ -18,6 +18,7 @@ littleMX=Template(r"tpl1598084278396.png", record_pos=(0.061, 0.018), resolution
 kongmingWithMX=Template(r"tpl1595155663680.png", record_pos=(0.54, 0.338), resolution=(899, 593),threshold=0.85)
 kongmingWithDFQ=Template(r"tpl1599061140339.png", threshold=0.9, record_pos=(0.683, 0.166), resolution=(852, 568))
 kongmingWithRin=Template(r"tpl1601470489693.png", threshold=0.85, record_pos=(0.709, 0.136), resolution=(905, 598))
+kongming=Template(r"tpl1605890226946.png", record_pos=(0.493, 0.131), resolution=(922, 608))
 cba=Template(r"tpl1596257560180.png", record_pos=(0.931, 0.222), resolution=(801, 540))
 nero = Template(r"tpl1602248158911.png", record_pos=(0.519, 0.294), resolution=(876, 582))
 jiaGong=Template(r"tpl1595156871397.png", record_pos=(1.32, 0.066), resolution=(899, 593))
@@ -50,48 +51,45 @@ def resultCheck():
 #主方法入口
 def actMain():
     #根据礼装找助战
-    findHelperByLiZhuang(nero)
+    findHelperByLiZhuang(kongming)
     startCheck()
     #archerJ()
     #
     #riderDFQ()
-    #GoldenRush()
-    Copper()
+    GoldenRush()
+    #Copper()
     #结算
     resultCheck()
 def GoldenRush():
-    wait(head2)
+    wait(head)
     wait(attack)
     #1
     skills1(1)
-    skills1(2)
-    skills1(3)
+    skills2(3,12)
     skills1(5)
-    skills2(6,11)
-    skills2(7,11)
-    changingMans(42, 44)
-    skills2(4,11)
-    skills2(5,11)
+    skills1(4)
     touch(attack)
     sleep(1.5)
-    skills(31)
-    wait(head2)
+    skills(33)
+    wait(head)
     wait(attack)
     #2
-    skills1(9)
+    skills1(1)
+    skills1(2)
+    skills1(3)
     touch(attack)
     sleep(1.5)
     skills(31)
     sleep(5.0)
-    wait(head2)
+    wait(head)
     wait(attack)
     #3
-    skills1(8)
+    skills2(9,12)
     skills3(20)
-    skills1(21)
+    skills2(22,12)
     touch(attack)
     sleep(1.5)
-    skills(31)
+    skills(32)
     sleep(5.0)
     
 def Copper():
@@ -369,3 +367,4 @@ def riderDFQ():
     #sleep(1.0)
     #touch(Template(r"tpl1598074711519.png", record_pos=(1.468, 0.475), resolution=(785, 531)))
     #sleep(2.0)
+
