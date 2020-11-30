@@ -51,7 +51,7 @@ def resultCheck():
 #主方法入口
 def actMain():
     #根据礼装找助战
-    findHelperByLiZhuang(kongming)
+    findHelperByLiZhuang(cba)
     startCheck()
     #archerJ()
     #
@@ -61,35 +61,38 @@ def actMain():
     #结算
     resultCheck()
 def GoldenRush():
-    wait(head)
+    wait(head2)
     wait(attack)
     #1
-    skills1(1)
-    skills2(3,12)
     skills1(5)
-    skills1(4)
-    touch(attack)
-    sleep(1.5)
-    skills(33)
-    wait(head)
-    wait(attack)
-    #2
-    skills1(1)
-    skills1(2)
+    skills1(6)
+    skills2(7,11)
     skills1(3)
     touch(attack)
     sleep(1.5)
     skills(31)
-    sleep(5.0)
-    wait(head)
+    wait(head2)
     wait(attack)
-    #3
-    skills2(9,12)
-    skills3(20)
-    skills2(22,12)
+    #2
+    skills2(9,11)
+    skills1(8)
+    changingMans(43, 44)
+    skills2(7,11)
     touch(attack)
     sleep(1.5)
-    skills(32)
+    skills(31)
+    sleep(5.0)
+    wait(head2)
+    wait(attack)
+    #3
+    skills2(9,11)
+    skills2(4,11)
+    skills1(8)
+    skills3(20)
+    skills1(21)
+    touch(attack)
+    sleep(1.5)
+    skills(31)
     sleep(5.0)
     
 def Copper():
