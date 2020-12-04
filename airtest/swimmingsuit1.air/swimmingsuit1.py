@@ -11,6 +11,9 @@ from fgo import *
 w,h = device().get_current_resolution()
 
 #全局使用图片定义
+
+makeFriend=Template(r"tpl1607015489855.png", record_pos=(0.652, 0.041), resolution=(1045, 677))
+closeBTN=Template(r"tpl1607015517128.png", record_pos=(0.414, 0.359), resolution=(1045, 677))
 head=Template(r"tpl1599061246578.png", record_pos=(1.345, 0.211), resolution=(852, 568))
 head2=Template(r"tpl1599305179332.png", record_pos=(1.605, 0.015), resolution=(812, 546))
 littleDFQ=Template(r"tpl1594959367052.png", record_pos=(0.051, 0.162), resolution=(1440, 802))
@@ -45,6 +48,9 @@ def resultCheck():
     #出门
     touch(Template(r"tpl1595161841879.png", record_pos=(1.304, 0.385), resolution=(899, 593)))
     sleep(1.0)
+    if(exists(makeFriend)):
+        touch(closeBTN)
+    sleep(1.0)
     touch(Template(r"tpl1598074711519.png", record_pos=(1.468, 0.475), resolution=(785, 531)))
     sleep(2.0)
 
@@ -64,10 +70,12 @@ def GoldenRush():
     wait(head2)
     wait(attack)
     #1
-    skills1(5)
-    skills1(6)
-    skills2(7,11)
     skills1(3)
+    skills2(4,11)
+    skills2(5,11)
+    changingMans(42, 44)
+    skills2(4,11)
+    skills2(7,11)
     touch(attack)
     sleep(1.5)
     skills(31)
@@ -75,9 +83,6 @@ def GoldenRush():
     wait(attack)
     #2
     skills2(9,11)
-    skills1(8)
-    changingMans(43, 44)
-    skills2(7,11)
     touch(attack)
     sleep(1.5)
     skills(31)
@@ -85,8 +90,8 @@ def GoldenRush():
     wait(head2)
     wait(attack)
     #3
-    skills2(9,11)
-    skills2(4,11)
+    skills2(6,11)
+    skills1(5)
     skills1(8)
     skills3(20)
     skills1(21)
